@@ -1,0 +1,70 @@
+.divPropo{
+    padding-top: 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.propoCameroun{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.came{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b6481;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 0.5rem;
+}
+.camer{
+    width: 200px;
+    height: 200px;
+    margin-top: -20px;
+}
+ul, li{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul, li:hover{
+    color: red;
+    cursor: pointer;
+}
+.paraProp{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media(max-width:1149px){
+    .propoCameroun{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:515px){
+    .propoCameroun{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px){
+    .came{
+        width: 350px;
+        height: 350px;
+    }
+    .camer{
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+    }
+}

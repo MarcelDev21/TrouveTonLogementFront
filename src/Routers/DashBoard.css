@@ -1,0 +1,12 @@
+.monDashBoard{
+    display: flex;
+    justify-content: space-between;
+}
+.myDash{
+    /* #2b6481 */
+    background-color: #2b6481;
+    height: 100vh;
+}
+.dos{
+    width: 100%;
+}

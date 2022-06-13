@@ -1,0 +1,110 @@
+.test{
+    width: 1000px;
+    display: inline-block;
+}
+.bete{
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+}
+.orignalDetailMaison{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.gestionCaroussel{
+    display: flex;
+}
+.partieDroiteMaison{
+    padding: 10px;
+    background-color: lime;
+    margin-left: 10px;
+    width: 400px;
+    height: 400px;
+    /* position: fixed; */
+    /* width: 100%; */
+}
+.contactBail{
+    color: red;
+}
+.contactDetailMaison{
+    color: red;
+}
+.paths2{
+    margin-left: 4px;
+    background-color: rgba(58, 56, 52, 0.377);
+    height: 45%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* width: 23%; */
+    width: 330px;
+    right: 3%;
+    padding: 10px;
+}
+.contactBailleur, .nomDeCité{
+    font-weight: bold;
+}
+.detail1{
+    display: flex;
+    justify-content: space-between;
+}
+.pDetail{
+   width: 75%;
+   text-align: justify;
+}
+
+.myDetail{
+    /* background-color: red;
+    padding:10px 350px 10px 0px; */
+}
+
+.imageOne{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.imageOne:hover{
+    cursor: pointer;
+}
+
+.descriptionMaison{
+    text-align: justify;
+}
+
+@media(max-width:1150px){
+    .gestionCaroussel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .partieDroiteMaison{
+        display: flex;
+        justify-content: center;
+    }
+    .paths2{
+        position: relative;
+    }
+}
+@media(max-width:800px){
+    .bete{
+        width: 350px;
+        height:200px
+    }
+    .test{
+        width: 350px;
+        display: inline-block;
+    }
+    .partieDroiteMaison{
+        padding: 0;
+        margin-left:0;
+        width: 350px;
+    }
+    .deriv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

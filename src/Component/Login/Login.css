@@ -1,0 +1,38 @@
+.mesDatasLogin{
+display: flex;
+justify-content: space-between;
+}
+.mesinputLogin{
+    display: flex;
+    flex-direction: column;
+}
+.maConnection{
+    background-color: red;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+.connecterLogin{
+    color: white;
+}
+.inputsLogin{
+    height: 30px;
+}
+.maDivTouche{
+    background-color: #2b6481;
+    padding: 40px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+.mesLogin{
+    color: white;
+}
+.maConnection:hover{
+    cursor: pointer;
+}
+.nouveauBailleur:hover{
+    color: red;
+    cursor: pointer;
+}

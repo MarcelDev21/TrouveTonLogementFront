@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menuChambrePremier{
+    background-color: #2b6481;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.monEnteteQuestion{
+    display: flex;
+}
+.TrouveLogementAll{
+    color: white;
+    font-weight: bold;
+}
+.monInputUniversité{
+    border: none;
+    margin-left: 10px;
+    width: 200px;
+    border-radius: 0.2rem;
+    margin-top: 4px;
+    height: 30px;
+    color: #666;
+}
+.menuChambrePremier{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.loginChambreUni{
+    color: white;
+    font-weight: bold;
+}
+.loginChambreUni:hover{
+    cursor: pointer;
+}
+.mesTypesSelections{
+    display: flex;
+    margin-left: 70px;
+}
+.select1, .select3{
+    margin-left: 10px;
+}
+.logoChambre{
+    width: 40px;
+}
+.selectcss{
+    width: 150px;
+    height: 30px;
+}
+.select3{
+    background-color: #2b6481;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border-radius: 0.2rem;
+}
+.select3:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.monHr{
+    width: 100%;
+    height: 10px;
+    background-color: #2b6481;
+}
+.monHrM{
+    width: 65%;
+    height: 100%;
+    background-color:#2b6481 ;
+}
+.TrouveTaChambre{
+    padding:10px 50px;
+}
+.punts{
+    display: flex;
+}
+.pointsFortis{
+    margin-top: 3%;
+}
+.paraChambreEtudiant{
+    text-align: justify;
+}
+.divCarousel{
+    width: 500px;
+}
+.carouselImage{
+    width: 500px;
+    height: 300px;
+    border-radius: 0.2rem;
+}
+.trouveTaChambreDiv{
+    display: flex;
+}
+.descriptionChambre{
+    margin-left: 10px;
+   
+}
+.chambredEtudiantTitre{
+    color: #2b6481;
+    font-size: 18px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    width: 60%;
+  
+    /* background-color: lime; */
+}
+.prixMois{
+    font-size: 16px;
+    color: rgba(58, 56, 52, 0.377);
+}
+.vl {
+    border-left: 2px solid rgba(58, 56, 52, 0.377);
+    height: 20px;
+    margin: 2px 5px 0px 5px;
+  }
+  .prixetVl{
+      display: flex;
+  }
+  .dessein, .divPrix0{
+      display: flex;
+  }
+  .testPrix{
+      display: flex;
+      margin-top: -10px;
+  }
+  .dessein2{
+      margin-left: 3px;
+  }
+  .chambrePiece{
+      margin-top: -20px;
+  }
+  .chiffre, .icon{
+    color: #666;  
+  }
+  .chambreEtPiece{
+      color: #666; 
+  }
+  .descriptionText{
+      /* width: 95%; */
+      width: 60%;
+      text-align: justify;
+  }
+  .logoEtDeux{
+      display: flex;
+      justify-content: space-between;
+      /* width: 80%; */
+      width: 60%;
+      margin-top: -10px;
+  }
+  .voirPlus{
+    background-color: #2b6481;
+    border-radius: 0.3rem;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .contactMail{
+      text-align: center;
+      font-weight: bold;
+  }
+  .voirPlus:hover{
+      background-color: red;
+      cursor: pointer;
+  }
+  .pFier{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+  }
+  .fier{
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+  .toutContact{
+      /*background-color: lime;
+      padding: 10px;
+      border-radius: 0.5rem;
+      display: block;
+      flex-direction: column;
+      position: fixed;
+      width: 100%; */
+
+      width: 300px;
+      margin-left: 30px;
+      background-color: rgba(58, 56, 52, 0.377);
+      height: 400px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.5rem;
+      position: fixed;
+      right: 1%;
+  }
+
+  .pagination{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: lime;
+  }
+ .paginationBttns{
+     width: 80%;
+     height: 70px;
+     display: flex;
+     list-style: none;
+     display: flex;
+     justify-content:center;
+ }
+ .maPag{
+     color: black;
+ }
+ .paginationBttns a{
+     padding: 10px;
+     margin: 8px;
+     border-radius: 5px;
+     border: 1px solid #2b6481;
+     color: #2b6481;
+     cursor: pointer; 
+ }
+ .paginationBttns a:hover{
+     color: white;
+     background-color: #2b6481;
+ }
+ .paginationActive a{
+    color: white;
+    background-color: #2b6481;
+ }
+ .rechercheUniversité{
+     margin-left: 20px;
+ }
+ .prixVente{
+     font-weight: bold;
+ }
+@media(max-width:497px){
+    .menuChambrePremier{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b6481;
+        height: 100px;
+    }
+    .monEnteteQuestion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:610px){
+    .mesTypesSelections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .select1, .select3{
+        margin-left: 0px;
+    }
+    .selectcss{
+        width: 220px;
+        height: 30px;
+    }
+    .select3{
+        width: 220px;
+        margin-top: 10px;
+    }
+}
+@media(max-width:1148px){
+    .trouveTaChambreDiv{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center; 
+    }
+   .officialDiv, .descriptionChambres{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+   }
+   .detail{
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   }
+   .toutContact{
+       position: relative;
+   }
+   .logoEtDeux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    width: 60%;
+    margin-top: -10px;
+    }
+    .chambredEtudiantTitre{
+        text-align: center;
+    }
+    .descriptionText{
+        width: 250px;
+    }
+    .divCarousel{
+        width: 350px;
+    }
+    .carouselImage{
+        width: 350px;
+    }
+}
+@media(max-width:900px){
+    .punts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hrPro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

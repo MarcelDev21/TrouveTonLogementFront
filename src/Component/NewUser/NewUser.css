@@ -1,0 +1,32 @@
+.NewUserGeneral{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.newUserInput{
+    width: 250px;
+    height: 30px;
+    border: none;
+}
+.nouvelUtilisateur{
+    font-weight: bold;
+}
+.CreerUser{
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+.CreerUser:hover{
+    cursor: pointer;
+}
+.toutUser{
+    background-color: #2b6481;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.messageUser{
+    color: white;
+    font-weight: bold;
+}

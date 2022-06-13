@@ -1,0 +1,15 @@
+.monFooter{
+    background-color: #2b6481;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.monNameFooter{
+    text-align: center;
+    color:white;
+    margin: 5px 30px;
+}
+.logoFooter{
+    width: 40px;
+    border-radius: 100px;
+}

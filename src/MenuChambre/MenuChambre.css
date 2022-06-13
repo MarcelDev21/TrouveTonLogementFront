@@ -1,0 +1,79 @@
+.normalMenuChambre{
+
+}
+.navigationChambre{
+    display: none;
+}
+.maDivChambre{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b6481;;
+    height: 80px;
+    align-items: center;
+    /* position: fixed;
+    width: 100%; */
+}
+.div1Chambrette{
+    display: flex;
+}
+.mesUlChambre, li{
+    list-style: none;
+}
+.mesLinksChambre{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+.mesSelects{
+    display: flex;
+    /* background-color: blue; */
+    padding: 20px;
+    border-bottom: 2px solid #2b6481;
+}
+.monSelect{
+    width: 150px;
+    height: 30px;
+}
+.monToutChambre{
+    /* position: fixed;
+    width: 100%; */
+}
+.trouveLogementChambre{
+    color: white;
+    margin-left: 10px;
+}
+.inputTest{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+}
+.bailleurMenu{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media(max-width:467px){
+    .mesSelects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:490px){
+    .maDivChambre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+    }
+    .div1Chambrette{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputTest{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}

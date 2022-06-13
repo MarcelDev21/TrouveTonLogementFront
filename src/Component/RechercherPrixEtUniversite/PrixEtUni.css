@@ -1,0 +1,17 @@
+.PrixEtUni{
+    display: flex;
+}
+.tetePrixEtudiant{
+    background-color: #2b6481;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:662px){
+    .PrixEtUni{
+        display: flex;
+        flex-direction: column;
+    }
+}

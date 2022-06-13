@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.monMenuTout{
+    background-color: #2b6481;
+    height: 350px;
+}
+
+.vd{
+    color: #666;
+  
+}
+.accueilGeneral{
+    display: flex;
+    flex-direction: column;
+}
+.votrelogement{
+    display: flex;
+    padding: 20px 20px 5px 20px;
+}
+.iconerecherche{
+    margin-top: 2px;
+    color: #666;
+}
+.monEntete{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.prix{
+    margin-left: 150px;
+}
+.maBarDeRecheche{
+    display: flex;
+    justify-content: center;
+}
+.monInput{
+    background-color: white;
+    width: 600px;
+    height: 40px;
+    border: none;
+    color: red;
+}
+.Rechercher{
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+}
+.monTextEntre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rechercheFonction{
+    display: flex;
+    justify-content: center;
+}
+.trouve{
+    font-size: 42px;
+}
+.trouve, .ne, .trouver, .prix{
+    color: white;
+}
+.ne, .trouver, .prix{
+    font-size: 18px;
+}
+
+.cameroun{
+    width:100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.imageDrapeau{
+   background-color: #d5d5d5;
+   padding: 30px;
+   border-radius: 0.5rem;
+}
+.recherch{
+    color: red;
+    font-size: 24px;
+}
+.recherch:hover{
+    cursor: pointer;
+}
+.cam{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+.monP{
+    color: white;
+    font-size: 16px;
+}
+
+.cardOrigine{
+    display: flex;
+    background-color: #2b6481;
+    margin: 5px;
+    border-radius: 0.5rem;
+}
+
+.mesTypes{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+@media(max-width:886px){
+    .maBarDeRecheche{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:640px){
+    .monInput{
+        width: 200px;
+    }
+}
+@media(max-width:450px){
+    .trouve{
+        text-align: center;
+        font-size: 18px;
+    }
+    .prix{
+        margin-left: 80px;
+    }
+}
+@media(max-width:1150px){
+    .mesTypes{
+        display: flex;
+        flex-direction: column;
+    }
+}
