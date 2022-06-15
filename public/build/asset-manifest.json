@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c40aea95.css",
+    "main.js": "/static/js/main.b5dd124d.js",
+    "static/js/787.697d6f90.chunk.js": "/static/js/787.697d6f90.chunk.js",
+    "static/media/i2.jpg": "/static/media/i2.445d00170539bfc1f169.jpg",
+    "static/media/logo.jpeg": "/static/media/logo.f873d53aadb43b5f57b0.jpeg",
+    "static/media/cameroun.png": "/static/media/cameroun.3d0ea7ab0f2fb7a0a398.png",
+    "index.html": "/index.html",
+    "main.c40aea95.css.map": "/static/css/main.c40aea95.css.map",
+    "main.b5dd124d.js.map": "/static/js/main.b5dd124d.js.map",
+    "787.697d6f90.chunk.js.map": "/static/js/787.697d6f90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c40aea95.css",
+    "static/js/main.b5dd124d.js"
+  ]
+}
