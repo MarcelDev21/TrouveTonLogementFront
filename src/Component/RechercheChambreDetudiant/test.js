@@ -28,7 +28,7 @@ const ChambreEtudiant = () => {
 
     useEffect(()=> {
 
-        const urlGetChambres ="http://localhost:5000/RecupereToutesChambres"
+        const urlGetChambres ="http://api.tonlogementaucameroun.com/RecupereToutesChambres"
         const monUrl = async () => {
             await axios.get(urlGetChambres).then((res)=> {
                 console.log(res.data.recupereTouteslesChambres)
@@ -338,7 +338,7 @@ const ChambreEtudiant = () => {
         //valeurCherche
         console.log("mon prix"+precio)
       if(valeurCherche!=undefined){
-            const url = `http://localhost:5000/RechercheEnFonctiondeluniversite/${universiteReche}`
+            const url = `http://api.tonlogementaucameroun.com/RechercheEnFonctiondeluniversite/${universiteReche}`
             await axios.get(url).then((res)=>{
             console.log(res)
             //setToutesMesChambres([res.data.recupereEnFonctionDuPrix])
@@ -347,7 +347,7 @@ const ChambreEtudiant = () => {
 
       if(valeurCherche !== undefined && precio !== undefined){
           console.log("entres tu ici", precio , valeurCherche)
-          const urlRecuperePrixEtUniversite = `http://localhost:5000/RecupereEnFonctionduPrix/${precio}/${valeurCherche}`
+          const urlRecuperePrixEtUniversite = `http://api.tonlogementaucameroun.com/RecupereEnFonctionduPrix/${precio}/${valeurCherche}`
           await axios.get(urlRecuperePrixEtUniversite).then((res)=> { 
               console.log(res)
               //setToutesMesChambres([res.data.recupereEnFonctionDuPrix])

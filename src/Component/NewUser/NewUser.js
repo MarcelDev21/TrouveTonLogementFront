@@ -13,7 +13,7 @@ const NewUser = () => {
         if(Password !== ConfirmerPassword){
             setMessage("Verifiez Vos Mots de Passe")
         }else{
-            const urlPostUser = `http://localhost:5000/creerUnUtilisateur`
+            const urlPostUser = `http://api.tonlogementaucameroun.com/creerUnUtilisateur`
             await axios.post(urlPostUser,{"Nom":NomUser, "Password": Password}).then((res)=>{
                 console.log(res)
                 setMessage(res.data.Message)

@@ -44,7 +44,7 @@ const ChambreEtudiant = () => {
 
     useEffect(()=>{
         const RecupereToutesChambres = async() => {
-            const urlGetChambres ="http://localhost:5000/RecupereToutesChambres"
+            const urlGetChambres ="http://api.tonlogementaucameroun.com/RecupereToutesChambres"
             await axios.get(urlGetChambres).then((res)=>{
                 //console.log(res.data.recupereTouteslesChambres.Prix)
                 setPrixChambre(res.data.recupereTouteslesChambres.Prix)
@@ -64,7 +64,7 @@ const ChambreEtudiant = () => {
 
     /*const RechercheEnFonctionDeLuniversite = async () => {
         console.log(monUniversite)
-        const urlGetUniversite = "http://localhost:5000/RechercheEnFonctionDeLuniversite"
+        const urlGetUniversite = "http://api.tonlogementaucameroun.com/RechercheEnFonctionDeLuniversite"
         await axios.post(urlGetUniversite,{"Universite":monUniversite}).then((res)=>{
             console.log(res)
             setChambre(res.data.monUniversite)
@@ -92,7 +92,7 @@ const ChambreEtudiant = () => {
         if(Prix != undefined){
             //console.log("vous avez entré le prix")
 
-            /*const urlRechercehPrix = "http://localhost:5000/RecupereEnFonctionDuPrix"
+            /*const urlRechercehPrix = "http://api.tonlogementaucameroun.com/RecupereEnFonctionDuPrix"
             await axios.post(urlRechercehPrix,{Prix}).then((res)=>{
                 setChambre(res.data.RechercheTest)
                 if(res.data.RechercheTest === undefined){
@@ -105,7 +105,7 @@ const ChambreEtudiant = () => {
             console.log("le prix est different de undefined")
         }
         
-        /*const urlRechercehPrix = "http://localhost:5000/RecupereEnFonctionDuPrix"
+        /*const urlRechercehPrix = "http://api.tonlogementaucameroun.com/RecupereEnFonctionDuPrix"
         await axios.post(urlRechercehPrix,{Prix}).then((res)=>{
             console.log(res.data.RechercheTest)
            // console.log("effectuer Recherche"+Prix)

@@ -9,7 +9,7 @@ const VoirLaCitee = () => {
 
     useEffect(()=>{
         const SortirDatadUnUser = async() => {
-            const urlSortirDatadUnUser = `http://localhost:5000/VoirLesChambresDunBailleur/${id}`  
+            const urlSortirDatadUnUser = `http://api.tonlogementaucameroun.com/VoirLesChambresDunBailleur/${id}`  
             await axios.get(urlSortirDatadUnUser).then((res)=>{
                 setMaisonBailleur(res.data.rechercheChambreBailleur)
             })
@@ -19,7 +19,7 @@ const VoirLaCitee = () => {
 
 
     const SupprimerMaison = async(id) => {
-        const urlSupprimePiolBailleur = `http://localhost:5000/SupprimePiolBailleur/${id}`
+        const urlSupprimePiolBailleur = `http://api.tonlogementaucameroun.com/SupprimePiolBailleur/${id}`
         await axios.delete(urlSupprimePiolBailleur).then((res)=>{
             console.log(res)
             if(res.data.succes === true){
@@ -29,7 +29,7 @@ const VoirLaCitee = () => {
     }
 
     const Actualisation = async() => {
-        const urlSortirDatadUnUser = `http://localhost:5000/VoirLesChambresDunBailleur/${id}`  
+        const urlSortirDatadUnUser = `http://api.tonlogementaucameroun.com/VoirLesChambresDunBailleur/${id}`  
         await axios.get(urlSortirDatadUnUser).then((res)=>{
             setMaisonBailleur(res.data.rechercheChambreBailleur)
         })

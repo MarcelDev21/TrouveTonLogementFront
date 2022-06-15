@@ -25,7 +25,7 @@ const PrixEtUni = () => {
     useEffect(()=>{
       const AfficheTout = async () => {
         console.log("test"+Prix, Universite)
-        const monUrl = "http://localhost:5000/RechercheEnFonctionDeLuniversite"
+        const monUrl = "http://api.tonlogementaucameroun.com/RechercheEnFonctionDeLuniversite"
         await axios.post(monUrl,{Prix, Universite}).then((res)=>{
             console.log(res)
             setChambre(res.data.monUniversite)
@@ -36,7 +36,7 @@ const PrixEtUni = () => {
 
     /*const RechercheEnFonctionPrix = async() => {
         console.log("testons")
-        const urlGetPrixEtUniversite = "http://localhost:5000/RechercheEnFonctionDeLuniversite"
+        const urlGetPrixEtUniversite = "http://api.tonlogementaucameroun.com/RechercheEnFonctionDeLuniversite"
         await axios.post(urlGetPrixEtUniversite,{"Prix":10000,Universite}).then((res)=>{
             console.log("ton uni"+res.data.monUniversite)
             console.log("ton uni"+res.data.monUniversite.Pays)

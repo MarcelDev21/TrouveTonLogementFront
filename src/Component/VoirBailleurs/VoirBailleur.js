@@ -30,7 +30,7 @@ const VoirBailleur = () => {
 
     useEffect(()=>{
         const TouslesBailleurs = async() => {
-            const urlTousLesBailleurs = "http://localhost:5000/TousLesBailleurs"
+            const urlTousLesBailleurs = "http://api.tonlogementaucameroun.com/TousLesBailleurs"
             await axios.get(urlTousLesBailleurs).then((res)=>{
                  console.log(res)
                  setTousBoss(res.data.recupereTousLesBailleurs)
@@ -45,7 +45,7 @@ const VoirBailleur = () => {
     }   
 
     const Actualisation = async() => {
-        const urlTousLesBailleurs = "http://localhost:5000/TousLesBailleurs"
+        const urlTousLesBailleurs = "http://api.tonlogementaucameroun.com/TousLesBailleurs"
         await axios.get(urlTousLesBailleurs).then((res)=>{
              console.log(res)
              setTousBoss(res.data.recupereTousLesBailleurs)
@@ -55,7 +55,7 @@ const VoirBailleur = () => {
 
     const EffectuerModification = async(id) => {
         console.log("on click",+id )
-        const urlModification = `http://localhost:5000/ModifierBailleur/${id}`
+        const urlModification = `http://api.tonlogementaucameroun.com/ModifierBailleur/${id}`
         await axios.put(urlModification,{NomBailleur,Telephone,NomdeCite,Quartier}).then((res)=>{
             console.log(res)
             if(res.data.succes === true){
@@ -99,7 +99,7 @@ const VoirBailleur = () => {
 
     const SupprimerBailleur = async(id) => {
         console.log(id)
-        const urlSuppression = `http://localhost:5000/SupprimerBailleur/${id}`
+        const urlSuppression = `http://api.tonlogementaucameroun.com/SupprimerBailleur/${id}`
         await axios.delete(urlSuppression).then((res)=> {
             console.log(res)
             Actualisation()
@@ -111,7 +111,7 @@ const VoirBailleur = () => {
     }
 
     /*const RechercherEnFonctionDuQuartier = async() => {
-        const urlRecherche ="http://localhost:5000/RechercherEnFonctionQuartier"
+        const urlRecherche ="http://api.tonlogementaucameroun.com/RechercherEnFonctionQuartier"
         await axios.get(urlRecherche,{"Quartier": QuartierCite}).then((res)=>{
             //console.log(res)
         })

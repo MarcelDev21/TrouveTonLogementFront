@@ -25,7 +25,7 @@ const VoirTypesDuniversite = () => {
     useEffect(()=>{
         const RechercheEnFonctionDeLuniversite = async () => {
             console.log(monUniversite)
-            const urlGetUniversite = "http://localhost:5000/RechercheEnFonctionDeLuniversite"
+            const urlGetUniversite = "http://api.tonlogementaucameroun.com/RechercheEnFonctionDeLuniversite"
             await axios.post(urlGetUniversite,{"Universite":monUniversite}).then((res)=>{
                 //console.log(res)
                 setChambre(res.data.monUniversite)

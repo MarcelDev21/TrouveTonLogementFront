@@ -57,7 +57,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
        // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -76,7 +76,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -94,7 +94,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -112,7 +112,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -130,7 +130,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -148,7 +148,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -166,7 +166,7 @@ const CreerChambre = () => {
         data.append('upload_preset','teztjodh')    
         // console.log("test files"+files)
          setLoading(true)
-         const urlUpload = "http://localhost:5000/UploadImage"
+         const urlUpload = "http://api.tonlogementaucameroun.com/UploadImage"
         await axios.post(urlUpload, data)
         .then((res) => {
           setImageNew(res.data.objetGenerale.url);
@@ -181,14 +181,14 @@ const CreerChambre = () => {
         /*if(!Pays || !Ville || !Quartier || !Prix || !TypeCuisine || !MettreCarre || !Description || !Date){
             setMessage("Remplissez tous vos formulaires")
         }else{
-            const urlPostAction= `http://localhost:5000/creerTaChambre/628778c28f9709dcb0317a22`
+            const urlPostAction= `http://api.tonlogementaucameroun.com/creerTaChambre/628778c28f9709dcb0317a22`
             //await axios.post(urlPostAction, {Pays,Ville,Quartier,Prix,TypeCuisine,MettreCarre,Description})
             await axios.post(urlPostAction,{Pays,Ville,Quartier,Prix,TypeCuisine,MettreCarre,Description,Date})
             .then((res)=> {
                 console.log(res)
             })
         }*/
-        const urlPostAction= `http://localhost:5000/creerTaChambre/${id}`
+        const urlPostAction= `http://api.tonlogementaucameroun.com/creerTaChambre/${id}`
             //await axios.post(urlPostAction, {Pays,Ville,Quartier,Prix,TypeCuisine,MettreCarre,Description})
             console.log(Distance)
             await axios.post(urlPostAction,{

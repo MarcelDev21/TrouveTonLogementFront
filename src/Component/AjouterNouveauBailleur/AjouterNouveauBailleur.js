@@ -17,7 +17,7 @@ const AjouterNouveauBailleur = () => {
           console.log("revoyer votre message")
         setMessage("Revoyer vos Champs")
       }else{
-        const urlPostCreerBailleur = "http://localhost:5000/creerBailleur" 
+        const urlPostCreerBailleur = "http://api.tonlogementaucameroun.com/creerBailleur" 
         await axios.post(urlPostCreerBailleur, {NomBailleur,Telephone,NomdeCite,Quartier}) 
         .then((res)=>{
             console.log(res)

@@ -25,7 +25,7 @@ const PrixComponent = () => {
 
     useEffect(()=>{
         const AfficheEnFonctionPrix = async() => {
-            const urlRechercehPrix = "http://localhost:5000/RecupereEnFonctionDuPrix"
+            const urlRechercehPrix = "http://api.tonlogementaucameroun.com/RecupereEnFonctionDuPrix"
             await axios.post(urlRechercehPrix,{Prix}).then((res)=>{
                 setChambre(res.data.RechercheTest)
                 if(res.data.RechercheTest === undefined){

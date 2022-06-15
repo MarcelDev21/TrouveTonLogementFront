@@ -59,7 +59,8 @@ const DetailMaison = () => {
   useEffect(()=> {
 
     const RetourEnFonctionId = async() => {
-      const urlGetInfoId =`http://localhost:5000/TrouveTaChambreEnFonctionId/${id}`
+
+      const urlGetInfoId =`http://api.tonlogementaucameroun.com/TrouveTaChambreEnFonctionId/${id}`
       await axios.get(urlGetInfoId).then((res)=>{
         console.log(res.data.recherDetailBailleur)
         setState([res.data.RechercheEnFonctionId])

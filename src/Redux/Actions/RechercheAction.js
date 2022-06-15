@@ -27,7 +27,7 @@ export const fetchPokemonFailure = (error) => {
 export const fetchMaison = (universite) => {
     return (dispatch) => {
         dispatch(fetchPokemenRequest)
-        const urlRecherche=`http://localhost:5000/RechercheEnFonctiondeluniversite/${universite}`
+        const urlRecherche=`http://api.tonlogementaucameroun.com/RechercheEnFonctiondeluniversite/${universite}`
         axios.get(urlRecherche).then((res)=> {
 
             /* funcRecherche = (searchterm) => {
